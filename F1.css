@@ -94,13 +94,15 @@ text-align: center;
 }
 
 li {
-font-size: 35px; 	
-
+font-size: 25px; 	
+margin: 10px
 	
 	
 }
 
-ul {
+
+
+ol {
 	
 margin: 20px;	
 	
@@ -112,3 +114,21 @@ form{
 text-align:center;
 margin: 10px;
 }
+
+
+.centerText {
+	
+text-align: center; 	
+	
+	
+}
+
+.centerBild {
+	text-align: center; 
+	
+}
+
+ table,  th, td, tr{
+	border: 1px solid black;
+	font-size:30px; 
+ border-collapse: collapse; }
