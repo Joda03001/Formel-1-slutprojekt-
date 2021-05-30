@@ -41,8 +41,21 @@ color: Red;
 font-size: 50px;
 
 }	
+
+
+.h2Mitt {
+	color: Red; 
+	text-align: center;
+	
+}
+
+h2 {
+	margin: 30px; 
+	color: Red; 
+	
+}
 	  
-	  .img {
+	  .imgHöger {
   
   float: right;
  
@@ -80,11 +93,11 @@ font-size: 50px;
 	
 }
 
-.pBild {
+.pBildHöger {
 	
 	text-align: justify;
     width: 600px; 
-float: right;	
+    float: right;	
 }
 
 .pHöger {
@@ -93,9 +106,9 @@ text-align: center;
 	
 }
 
-li {
-font-size: 25px; 	
-margin: 10px
+li, ul {
+font-size: 20px; 	
+margin: 15px
 	
 	
 }
@@ -112,7 +125,14 @@ margin: 20px;
 form{ 
 
 text-align:center;
-margin: 10px;
+margin: 15px;
+
+
+
+}
+
+button {
+	margin:20px;
 }
 
 
@@ -131,4 +151,17 @@ text-align: center;
  table,  th, td, tr{
 	border: 1px solid black;
 	font-size:30px; 
- border-collapse: collapse; }
+ border-collapse: collapse; } 
+ 
+ .rubrik {
+	 font-size: 30px;
+	 margin: 30px;
+	 color: #FF0000;
+	 
+ }
+ 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
