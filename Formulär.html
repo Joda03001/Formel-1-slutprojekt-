@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <html lang ="sv"> 
 
@@ -25,7 +25,7 @@
 		<a href="F1historia.html">Historia</a>
 		<a href="F1Upplägg.html">Sportens upplägg</a>
 		<a href="F1Säsongen2021.html">Säsongen 2021</a>
-		<a href="">Tippar säsongen</a>
+		<a href="TipparF1.html">Tippar säsongen 2021 </a>
 	</div>
 
 </nav> 
@@ -33,23 +33,26 @@
 <main> 
 
 
+<!--Här börjar mitt formulär. När man trycker på svara kommer man till resultat.html och jag använder metoden Get eftersom det inte är privat information man svarar med.--> 
+<form action="Svar.html" method="GET" > 
 
-<form action="resultat.html" method="GET" > 
-
+<!--En div som skapar första frågan med label. Här är det vanlig text man ska skriva i en ruta.-->
 <div> 
 	<label> 1. Vilket år blev F1 ett världsmästerskap? </label> 
 	<input> 
 </div>  
 
+<!--Här ska man skriva in ett nummer och då är inputens typ "number".--> 
 <div> 
 	<label> 2. Hur många förare kör 2021? </label> 
-	<input type="number" name="år" id="år" > 
+	<input type="number" name="Hur många förare 2021" id="atnalFörare" > 
 </div> 
 
+<!--På denna frågar finns det 3 olika alternativ som är av typen "radio". Det innebär att man bara kan välja en.-->
 3. Vilken förare har vunnit flest race?
 <div> 
 	<label for="Hamilton"> Lewis Hamilton </label> 
-	<input type="radio" name="Flest vinster" id="Lewis Hamilton"> 
+	<input type="radio" name="Flest vinster" id="Hamilton"> 
 </div> 
 <div> 
 	<label for="Schumacher"> Michael Schumacher </label> 
@@ -68,30 +71,73 @@
 
 5. Vad får man inte göra i F1? 
 
+<!--Här är det  flera olika alternativ med typen "checkbox". Det innebär att man kan välja flera alternativ.-->
 <div> 
 
- <label for="Köra om vid gul flagga"> Köra om när det är gul flagga</label> 
-<input type="checkbox" name="Vad får man inte göra" id="köra mott gul flagga">  
+ <label> Köra om när det är gul flagga</label> 
+<input type="checkbox" name="Vad får man inte göra" id="KöraMotGul">  
 
 </div > 
 
 
 <div> 
 
- <label for="Köra fullt när det är grön flagga"> Köra fullt vid grön flagga</label> 
-<input type="checkbox" name="Vad får man inte göra" id="köra mott gul flagga">  
+ <label> Köra fullt vid grön flagga</label> 
+<input type="checkbox" name="Vad får man inte göra" id="KöraVidGrön">  
 
 </div > 
 
 <div> 
 
- <label for="Köra fullt när det är grön flagga">  </label> 
-<input type="checkbox" name="Vad får man inte göra" id="köra mott gul flagga">  
+ <label> Köra hela racet på samma däck som man startade på </label> 
+<input type="checkbox" name="Vad får man inte göra" id="KöraMedSammaDäck">  
 
 </div >
 
+<div> 
+
+ <label>  Köra om 3 bilar i samma sväng </label> 
+<input type="checkbox" name="Vad får man inte göra" id="KöraOm3St">  
+
+</div >
+
+<div> 
+	<label> 6. Vilka 2 olika koncept är det man snackar mest om denna säsongen som har stor påverkan?</label> 
+	<input> 
+</div>
+  
+<div> 
+	<label> 7. Hur många poäng får man om man kommer 3 i ett race? </label> 
+	<input type="number" name="poäng för att komma 3:a" id="Poäng" > 
+</div> 
+
+8. Vilket är det hårdaste straffet man kan få i ett race?
+<div> 
+	<label>5 sekunder  </label> 
+	<input type="radio" name="Hårdaste straffet" id="5Sek"> 
+</div> 
+<div> 
+	<label> 30 sekunder </label> 
+	<input type="radio" name="Hårdaste straffet" id="30Sek"> 
+</div> 
+
+<div> 
+	<label> Svart flagga  </label> 
+	<input type="radio" name="Hårdaste straffet" id="SvartFlagga"> 
+</div> 
+
+<div> 
+	<label> 9. Vad händer på lördagen under en F1-helg </label> 
+	<input> 
+</div> 
+ 
+<div> 
+	<label> 10. Hur många race ska det köras under 2021? </label> 
+	<input type="number" name="Hur många race 2021" id="atnalRace" > 
+</div> 
 
 
+<!--En svara knapp som tar oss till sidan med svaren-->  
 	<button> Svara </button>
 
 
@@ -103,8 +149,8 @@
 </main>
 
 
-<footer>
-<p class="footer"> Jonas Dahlström EEDAT19 </p>
+<footer class="footer">
+<p> Jonas Dahlström EEDAT19 </p>
 </footer> 
 
 </body> 

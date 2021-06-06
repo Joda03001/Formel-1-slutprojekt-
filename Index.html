@@ -1,36 +1,41 @@
+<!-- Här visar man att vi användder htmL 5 som Doctype --> 
 <!DOCTYPE html>
-
+<!--Startar Html dokumentet och säger att språket är svenska--> 
 <html lang="sv"> 
 
-<head > 
+<!--Här börjar Head som är alld som inte syns på sidan--> 
+<head> 
+<!--Vi använder UTF-8 som teckenkodning--> 
 <meta charset = "UTF-8">
+<!--Här länklas Css in--> 
 <link href="F1.css" rel="stylesheet">
+<!--Titeln på sidan-->
 <title> F1 skola startsida </title> 
-
+<!--Här avslutas "head"--> 
 </head> 
 
-
+<!-- Här startas body som är allt som synns på sidan. Jag länkar även in min grid-->
 <body class ="container"> 
 
-
+<!--header börjar som är det översta i min grid-->
 <header> 
-
+<!--h1 är den störst formen av rubrik, det finns H1-H6--> 
 <h1> Formel 1 Skola </h1>
-
+<!--Här länkar jag in en bild med img src och sedan filens namn som ligger i samma map. Jag väljer bredden och höjden på bilden. Alt är det som läses upp vid talsyntes--> 
   <img src="F1logo.png" width="500" 
      height="150" alt= "F1 logga"  >
 
 </header>
-
+<!--Här börjar nav som är navigationsområdet i min grid--> 
 <nav> 
 
 
-
+<!--Här är min globala meny för alla sidorna. Jag har en klass som heter nav som jag länkar in som design.-->
 <div class="nav">
   <a href="F1historia.html">Historia</a>
   <a href="F1Upplägg.html">Sportens upplägg</a>
   <a href="F1Säsongen2021.html">Säsongen 2021</a>
-  <a href="#">Link</a>
+  <a href="TipparF1.html">Tippar säsongen 2021 </a>
   <a href="Formulär.html">F1 frågor</a>
 </div>
 
@@ -38,20 +43,21 @@
 
 </nav> 
 
-
+<!--Main är huvudinnehållet i min grid--> 
 <main> 
 
  <img class = "imgHöger" src="formula-1.png"  alt ="Formel-1 bilar">  
   
-  
-  <p class= "pStartsida" style="font-family: Times New Roman" > Hej! Denna sidan är för dig som vill lära dig allt om f1. Jag kommer gå igenom allt du behöver veta inför säsongen 2021 och lite till. Jag berättar även om historien bakom f1 och
+  <!--p är taggen för text--> 
+  <p class= "pStartsida" > Hej! Denna sidan är för dig som vill lära dig allt om f1. Jag kommer gå igenom allt du behöver veta inför säsongen 2021 och lite till. Jag berättar även om historien bakom f1 och
 vilka som är de bästa genom tiderna på sporten. </p>
   
 </main > 
 
+<!--Min footer längst ner på sidan med namn och klass--> 
 <footer class = "footer"> 
 
-Jonas Dahlström EEDAT19
+<p>Jonas Dahlström EEDAT19 </p>
 </footer> 
 
 
@@ -61,5 +67,5 @@ Jonas Dahlström EEDAT19
 </body> 
 
 
-
+<!--Här avslutas html-dokumenten-->
 </html> 

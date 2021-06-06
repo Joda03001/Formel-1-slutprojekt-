@@ -1,4 +1,6 @@
 
+
+/*En klass som är min grid och som länkas till min "body". Den är indelad i 4 kollumner som alla är 1 fjärdedel stor. Jag visar hur de ska vara indelade i "grid-template-areas"  */ 
 .container{
 	
 	display: grid; 
@@ -29,12 +31,15 @@
 		  
 	  }
 	  
+	  /*Alla p taggar har storleken 20px och lite marginal runt sig*/ 
+	  
 	  p{
 		  font-size:20px;
 		  margin: 20px;
 	  }
 	  
-	  
+	 
+/* En typselektor på h2 som gör att att h2 taggar kommer i mitten, har färgen röd och har storleken 50 pixlar*/	  
 h1 {
 text-align: center;
 color: Red; 
@@ -43,17 +48,23 @@ font-size: 50px;
 }	
 
 
-.h2Mitt {
-	color: Red; 
-	text-align: center;
-	
-}
+
 
 h2 {
 	margin: 30px; 
 	color: Red; 
 	
 }
+
+/*En klass-selektor vilket bara gäller där jag skriver "class="rubrik-mitten".Den gör samma sak som h1 men är lite mindre för att användas som underrubrik.*/
+.rubrik-mitten {
+	
+	color:Red; 
+	text-align: center; 
+	margin: 20px;
+	font-size: 30px;
+}
+
 	  
 	  .imgHöger {
   
@@ -61,6 +72,7 @@ h2 {
  
 	  }
 	  
+	/*En klass-selektor för nav som gör att det blir röd bakgrund*/  
 	  .nav {
 
 
@@ -69,6 +81,7 @@ h2 {
  
 }
 
+/*Klass-selektorn för min nav. Denna gör att de ligger på rad och att de är vit-text.*/ 
 	  .nav a {
   float: left;
   color: white;
@@ -79,7 +92,7 @@ h2 {
   
 }
 
-
+/*Min footer har orange text, 35 px marginal och är i mitten.*/
 .footer {
 	color:orange; 
 	font-size: 30px; 
@@ -93,6 +106,7 @@ h2 {
 	
 }
 
+/*En klass som sätter texten till höger och som används för text under en bild som är till höger*/
 .pBildHöger {
 	
 	text-align: justify;
@@ -103,9 +117,10 @@ h2 {
 .pHöger {
 text-align: center; 	
 	
-	
+
 }
 
+/*li och ul ska ha mellanrum på 15 pixla och ha storleken 20 pixlar*/ 
 li, ul {
 font-size: 20px; 	
 margin: 15px
@@ -113,7 +128,10 @@ margin: 15px
 	
 }
 
-
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 ol {
 	
@@ -148,10 +166,7 @@ text-align: center;
 	
 }
 
- table,  th, td, tr{
-	border: 1px solid black;
-	font-size:30px; 
- border-collapse: collapse; } 
+ 
  
  .rubrik {
 	 font-size: 30px;
@@ -160,8 +175,31 @@ text-align: center;
 	 
  }
  
-.center {
-  margin-left: auto;
-  margin-right: auto;
+
+
+.textHöger {
+	text-align: right; 
 }
+
+/*Denna gäller för hela tabellen och göra att den ser lite finare ut och inte så ihopdragen. En ram runt som är 1 px.*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  border: 1px solid 
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+}
+
+/*Nth-child som gör att alla jämna table rows har bakgrundsfärgen #DDD */
+tr:nth-child(even) {
+  background-color: #DDD;
+  
+}
+
+
+
  
